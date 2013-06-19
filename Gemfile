@@ -13,6 +13,9 @@ gem 'therubyracer'
 
 gem 'bootstrap-sass', '2.1'
 
+#to encript the password
+gem 'bcrypt-ruby', '3.0.1'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,6 +31,10 @@ end
 
 group :production do
   gem 'pg'
+end
+
+group :development do
+  gem 'annotate', '2.5.0'
 end
 
 gem 'jquery-rails'
